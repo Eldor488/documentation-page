@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 #navbar{
     width:  20%;
     background-color: aliceblue;
@@ -5,6 +6,7 @@
     border: 3px solid black;
     height: 200px; /* or any fixed height */
     overflow-y: auto;
+    font-family: ;
 }
 #main-doc{
     width:  80%;
