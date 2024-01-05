@@ -10,4 +10,9 @@
     background-color: aqua;
     
     border: 3px solid rgb(176, 0, 0);
+    padding: 1%;
+}
+
+body{
+    display: flex;
 }
