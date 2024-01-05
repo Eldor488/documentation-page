@@ -1,9 +1,11 @@
 #navbar{
-    width: 20%;
+    width:  20%;
     background-color: aliceblue;
+    position: absolute;
     
 }
 #main-doc{
-    width: 80%;
+    width:  80%;
     background-color: aqua;
+    position: absolute;
 }
