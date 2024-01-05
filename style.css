@@ -1,9 +1,10 @@
 #navbar{
     width:  20%;
     background-color: aliceblue;
-    
+    padding: 1%;
     border: 3px solid black;
-    
+    height: 200px; /* or any fixed height */
+    overflow-y: auto;
 }
 #main-doc{
     width:  80%;
