@@ -33,11 +33,39 @@
             <header>Introduction</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="https://es.reactjs.org/docs/getting-started.html">React JS</a> is a JavaScript library for building user interfaces.
+                    </li>
+                    <li>
+                        React JS is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+                    </li>
+                    <li>
+                        It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                    </li>
+                    <li>
+                        React JS has a few different kinds of components, but we’ll start with <a href="https://es.reactjs.org/docs/components-and-props.html">React.Component</a> subclasses:
+                    </li>
+                    <li>
+                        <code>class ShoppingList extends React.Component {<br>
+                            render() {<br>
+                            return (<br>
+                            &lt;div className="shopping-list"&gt;<br>
+                            &lt;h1>Shopping List for {this.props.name}&lt;/h1&gt;<br>
+                            &lt;ul&gt;<br>
+                            &lt;li&gt;Instagram&lt;/li&gt;<br>
+                            &lt;li&gt;WhatsApp&lt;/li&gt;<br>
+                            &lt;li&gt;Oculus&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;/div&gt;<br>
+                            );<br>
+                            }<br>
+                            }<br>
+                            // Example usage: <br>
+                            ReactDOM.render(<br>
+                            &lt;ShoppingList name="Mark" /&gt;,<br>
+                            document.getElementById('root')<br>
+                            );</code>
+                    </li>
                 </ul>
             </p>
         </section>
@@ -45,9 +73,15 @@
             <header>What you should already know</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Introduction">HTML</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Getting_Started/What_is_CSS">CSS</a>
+                    </li>
                 </ul>
             </p>
         </section>
@@ -55,9 +89,15 @@
             <header>JavaScript and React JS</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="https://es.reactjs.org/docs/react-api.html">React</a> is a JavaScript library, and so we’ll assume you have a basic understanding of the JavaScript language.
+                    </li>
+                    <li>
+                        If you don’t feel very confident, we recommend going through a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">JavaScript</a> tutorial to check your knowledge level and enable you to follow along this guide without getting lost.
+                    </li>
+                    <li>
+                        It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -66,9 +106,19 @@
             <header>Hello World</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        The smallest React example looks like this: <br> <code>ReactDOM.render(<br>
+                            &lt;h1&gt;Hello, world!&lt;/h1&gt;,<br>
+                            document.getElementById('root')<br>
+                            );</code>
+                    </li>
+                    <li>
+                        It displays a heading saying “Hello, world!” on the page.
+
+                    </li>
+                    <li>
+                        <a href="https://es.reactjs.org/docs/rendering-elements.html">ReactDOM.render()</a> controls the contents of the container node you pass in.
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -77,7 +127,9 @@
             <header>Introducing JSX</header>
             <p>
                 <ul>
-                    <li></li>
+                    <li>
+                        Consider this variable declaration: <br> <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+                    </li>
                     <li></li>
                     <li></li>
                 </ul>
