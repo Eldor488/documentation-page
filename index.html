@@ -130,19 +130,37 @@
                     <li>
                         Consider this variable declaration: <br> <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        This funny tag syntax is neither a string nor HTML.
+
+                    </li>
+                    <li>
+                        It is called JSX, and it is a syntax extension to JavaScript.
+                    </li>
                 </ul>
-                <code></code>
+                <code>
+                    const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;<br>
+                    ReactDOM.render(<br>
+                    element,<br>
+                    document.getElementById('root')<br>
+                    );
+                </code>
             </p>
         </section>
         <section class="main-section" id="Rendering_Elements">
             <header>Rendering Elements</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        Elements are the smallest building blocks of React apps.
+                    </li>
+                    <li>
+                        An element describes what you want to see on the screen: <br> <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+
+                    </li>
+                    <li>
+                        Unlike browser DOM elements, React elements are plain objects, and are cheap to create.
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -151,9 +169,15 @@
             <header>Components and Props</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+                    </li>
+                    <li>
+                        Conceptually, components are like JavaScript functions.
+                    </li>
+                    <li>
+                        They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -162,9 +186,15 @@
             <header>State and Lifecycle</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        Consider the ticking clock example from one of the previous sections.
+                    </li>
+                    <li>
+                        In <a href="https://es.reactjs.org/docs/rendering-elements.html">Rendering Elements</a>, we only learned one way to update the UI.
+                    </li>
+                    <li>
+                        We call <a href="https://es.reactjs.org/docs/rendering-elements.html">ReactDOM.render()</a> to change the rendered output:
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -173,9 +203,18 @@
             <header>Handling Events</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        Handling events with React elements is very similar to handling events on DOM elements.
+                    </li>
+                    <li>
+                        There are some syntactic differences: <br> <code>React event handlers are named using camelCase, rather than lowercase.<br>
+                            With JSX you pass a function as the event handler, rather than a string.</code>
+                    </li>
+                    <li>
+                        For example, the HTML: <br> <code>&lt;button onclick="activateLasers()"&gt;<br>
+                            Activate Lasers<br>
+                            &lt;/button&gt;</code>
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -184,9 +223,15 @@
             <header>Conditional Rendering</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        In React, you can create distinct components that encapsulate behavior you need.
+                    </li>
+                    <li>
+                        Then, you can render only some of them, depending on the state of your application.
+                    </li>
+                    <li>
+                        Conditional rendering in React works the same way conditions work in JavaScript.
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -195,20 +240,41 @@
             <header>Lists and Keys</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        First, let’s review how you transform lists in JavaScript.
+                    </li>
+                    <li>
+                        Given the code below, we use the <code>map()</code> function to take an array of numbers and double their values.
+                    </li>
                     <li></li>
                 </ul>
-                <code></code>
+                <code>
+                    const numbers = [1, 2, 3, 4, 5];<br>
+                    const doubled = numbers.map((number) => number * 2);<br>
+                    console.log(doubled); // [2, 4, 6, 8, 10]
+                </code>
             </p>
         </section>
         <section class="main-section" id="Forms">
             <header>Forms</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state.
+                    </li>
+                    <li>
+                        For example, this form in plain HTML accepts a single name: <br> <code>&lt;form&gt;<br>
+                            &lt;label&gt;<br>
+                            Name:<br>
+                            &lt;input type="text" name="name"&gt;<br>
+                            &lt;/label&gt;<br>
+                            &lt;input type="submit" value="Submit"&gt;<br>
+                            &lt;/form&gt;</code>
+                    </li>
+                    <li>
+                        This form has the default HTML form behavior of browsing to a new page when the user submits the form.
+
+                    </li>
                 </ul>
                 <code></code>
             </p>
@@ -217,11 +283,53 @@
             <header>Lifting State Up</header>
             <p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        Often, several components need to reflect the same changing data.
+                    </li>
+                    <li>
+                        We recommend lifting the shared state up to their closest common ancestor.
+                    </li>
+                    <li>
+                        Let’s see how this works in action.
+                    </li>
                 </ul>
-                <code></code>
+                <code>
+                    function BoilingVerdict(props) {<br>
+                    if (props.celsius >= 100) {<br>
+                    return <p>The water would boil.</p>;<br>
+                    }<br>
+                    return <p>The water would not boil.</p>;<br>
+                    }<br>
+                    class Calculator extends React.Component {<br>
+                    constructor(props) {<br>
+                    super(props);<br>
+                    this.handleChange = this.handleChange.bind(this);<br>
+                    this.state = {temperature: ''};<br>
+                    }<br>
+                    handleChange(e) {<br>
+                    this.setState({temperature: e.target.value});<br>
+                    }<br>
+                    render() {<br>
+                    const temperature = this.state.temperature;<br>
+                    return (<br>
+                    &lt;fieldset&gt;<br>
+                    &lt;legend&gt;Enter temperature in Celsius:&lt;/legend&gt;<br>
+                    &lt;input<br>
+                    value={temperature}<br>
+                    onChange={this.handleChange} /&gt;<br>
+                    <br>
+                    &lt;BoilingVerdict<br>
+                    celsius={parseFloat(temperature)} /&gt;<br>
+                    <br>
+                    &lt;/fieldset&gt;<br>
+                    );<br>
+                    }<br>
+                    }<br>
+                    ReactDOM.render(<br>
+                    &lt;Calculator /&gt;,<br>
+                    document.getElementById('root')<br>
+                    );
+                </code>
             </p>
         </section>
         <section class="main-section" id='Reference'>
