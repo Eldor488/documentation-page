@@ -1,31 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-#navbar{
-    width:  20%;
-    background-color: aliceblue;
-    padding: 1%;
-    border: 3px solid black;
-   
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
     overflow-y: auto;
-    font-family: 'Fira Code', monospace;
-}
-#main-doc{
-    width:  80%;
-    background-color: aqua;
-    
-    border: 3px solid rgb(176, 0, 0);
-    padding: 1%;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-body{
-    display: flex;
+#navbar header {
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-#navbar ul li a:visited{
-    color: black;
+.nav-link {
+    display: block;
+    padding: 8px;
     text-decoration: none;
+    color: black;
 }
-#navbar ul{
-    color: black;
-    text-decoration: none;
-    border-top: 1px solid black;
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
 }
